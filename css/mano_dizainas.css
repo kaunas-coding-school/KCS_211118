@@ -11,6 +11,22 @@ li:nth-child(2) {
     height: 100px;
 }
 
+/* ---- Layout ---- */
+
 body {
     background-color: antiquewhite;
+}
+
+header {
+    background-color: lightpink;
+}
+aside {
+    background-color: cadetblue;
+}
+main {
+    background-color: yellow;
+}
+footer {
+    background-color: #232323;
+    color: darkgray;
 }
