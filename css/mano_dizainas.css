@@ -6,18 +6,6 @@ li {
     color: blue;
 }
 
-li:nth-child(2) {
-    width: 100px;
-    height: 100px;
-}
-
-/* ---- Layout ---- */
-
-html,body {
-    width: 100%;
-    height: 100%;
-}
-
 body {
     background-color: antiquewhite;
 }
@@ -27,19 +15,11 @@ header {
 }
 aside {
     background-color: cadetblue;
-    width: 250px;
-    float:left;
 }
 main {
     background-color: yellow;
-    width: 84%;
-    float:left;
 }
 footer {
     background-color: #232323;
     color: darkgray;
-    clear: both;
-}
-.turinys {
-    width: 100%;
 }
