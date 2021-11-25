@@ -1,17 +1,37 @@
 <!doctype html>
-<html>
-    <head>
-        <title>Kontaktai</title>
-    </head>
-    <body>
-
-        <h1>Labas pasauyli!</h1>
-
-        <a href="/index.html">Pradzia</a>
-
-        <p>Kontaktu forma:</p>
-
-
-
-    </bpdy>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mano pirmas puslapis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/mano_dizainas.css">
+</head>
+<body>
+<aside class="left">Sonine juosta</aside>
+<main>
+    <h1>Kontaktai</h1>
+    <p>Kontaktu forma:</p>
+    <form action="/saugoti_duomenis.php" method="post">
+        <input type="text" placeholder="Vardas"><br>
+        <input type="text" placeholder="Pavardė"><br>
+        <input type="email" name="email" placeholder="El. paštas"><br>
+        <textarea name="message" id="" cols="30" rows="10"
+                  placeholder="Žinutė mums"></textarea>
+        <hr>
+        <input type="submit" value="Klausti">
+    </form>
+</main>
+<footer>Visos teisės saugomos &copy;2021</footer>
+<aside class="right">Reklama</aside>
+<header>
+    <nav>
+        <a href="/index.html">pradžia</a>
+        <a href="/html/portfolio.html">Portfolio</a>
+        <a href="/kontaktai.html">Kontaktai</a>
+    </nav>
+</header>
+</body>
 </html>

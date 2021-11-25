@@ -1,0 +1,132 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        's h h'
+        's m r'
+        's f f';
+    grid-template-rows: 50px auto 100px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 10px;
+}
+
+main {
+    grid-area: m;
+}
+
+footer {
+    grid-area: f;
+}
+
+aside.right {
+    grid-area: r;
+}
+
+aside.left {
+    grid-area: s;
+}
+
+header {
+    grid-area: h;
+}
+
+/* Extra maži įrenginiai (telefonai, 600px ir žemiau) */
+@media only screen and (max-width: 600px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            'h'
+            'm'
+            'f';
+        grid-template-rows: 25px auto 50px;
+        grid-template-columns: 5fr;
+    }
+
+    aside.right, aside.left {
+        display: none;
+    }
+}
+
+body > * {
+    border: 1px solid darkgray;
+    padding: 10px;
+    background-color: #fcfff2;
+}
+
+/* Maži įrenginiai (statmenos planšetės, ar gulsti telefonai 600px ir aukščiau) */
+@media only screen and (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            'h'
+            's'
+            'm'
+            'r'
+            'f';
+        grid-template-rows: 25px 25px auto 50px 50px;
+        grid-template-columns: 5fr;
+    }
+
+    aside.right {
+        display: block;
+    }
+}
+
+/* Vidutiniai įrenginiai (gulsčios planšetės ar maži laptopai, 768px ir aukščiau) */
+@media only screen and (min-width: 768px) {
+    body {
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+            's h'
+            's m'
+            's f';
+        grid-template-rows: 50px auto 100px;
+        grid-template-columns: 1fr 4fr;
+    }
+
+    aside.right {
+        display: none;
+    }
+}
+
+/* Dideli įrenginiai (laptopai, staliniai PC, 992px ir aukščiau) */
+@media only screen and (min-width: 992px) {
+    body {
+        display: grid;
+        grid-template-areas:
+        's h'
+        's m'
+        's r'
+        's f';
+        grid-template-rows: 50px auto 150px 100px;
+        grid-template-columns: 1fr 4fr;
+    }
+
+    aside.right {
+        display: block;
+    }
+}
+
+/* Extra dideli įrenginiai (dideli laptopai ir stalinai PC, 1200px ir aukščiau) */
+@media only screen and (min-width: 1200px) {
+    body {
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+        's h h'
+        's m r'
+        's f f';
+        grid-template-rows: 50px auto 100px;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    aside.right {
+        display: block;
+    }
+}
