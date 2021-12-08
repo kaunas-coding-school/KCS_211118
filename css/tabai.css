@@ -1,0 +1,43 @@
+.sheets > div {
+    display: none;
+    border: 1px solid red;
+}
+
+#home {
+    display: block;
+}
+
+/* --- Stilizavimo taisykles --- */
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 30, 34);
+}
+
+h1 {
+    color: white;
+}
+
+.tabai {
+    display: flex;
+}
+
+.tabai a {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin: 10px 5px 0;
+}
+
+.sheets {
+    display: flex;
+    background-color: darkgray;
+    height: 250px;
+    width: 500px;
+    possition: static;
+    padding: 10px;
+}
+
+.active {
+    background-color: darkgray;
+}
