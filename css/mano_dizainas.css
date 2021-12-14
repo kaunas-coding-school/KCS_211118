@@ -16,10 +16,16 @@ header {
 aside {
     background-color: cadetblue;
 }
+
 main {
     background-color: yellow;
 }
+
 footer {
     background-color: #232323;
     color: darkgray;
+}
+
+table {
+
 }
