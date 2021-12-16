@@ -1,17 +1,18 @@
 <?php
 
-function skaitytiFaila(string $filePath, string $option = 'r')
+function skaitytiFaila(string $filePath): string
 {
-    return fopen($filePath, $option);
+    $failoDydis = filesize($filePath);
+    $failas = fopen($filePath, 'r');
+    $failoTurinys = fread($failas, $failoDydis);
+    fclose($failas);
+
+    return $failoTurinys;
 }
 
-function spausdintiFaila($manofailas, $kiek): void
+function saugotiIfaila(string $filePath, $duomenys): void
 {
-    echo fread($manofailas, $kiek);
-    fclose($manofailas);
-}
-
-function redaguotiFaila($failas, $duomenys): void
-{
+    $failas = fopen($filePath, 'w+');
     fwrite($failas, $duomenys);
+    fclose($failas);
 }
