@@ -32,14 +32,24 @@ require_once 'libs/fs.php';
 //$text = preg_replace("/Guru/", '<span style="background:yellow">Guru</span>', $text);
 //echo $text;
 
+//
+//$filePath = 'duomenys.json';
+//
+//$failoTurinys = skaitytiFaila($filePath);
+//
+//$masyvas = json_decode($failoTurinys, true);
+//$masyvas = array_merge($masyvas, ['Tautvydas' => 99, 'Joe' => 'LAbas']);
+//$naujiDuomenys = json_encode($masyvas);
+//
+//saugotiIfaila($filePath, $naujiDuomenys);
 
-$filePath = 'duomenys.json';
+include 'admin/Car.php';
 
-$failoTurinys = skaitytiFaila($filePath);
+$automobilis = new Car();
 
-$masyvas = json_decode($failoTurinys, true);
-$masyvas = array_merge($masyvas, ['Tautvydas' => 99, 'Joe' => 'LAbas']);
-$naujiDuomenys = json_encode($masyvas);
+$automobilis->spalva = 'Raudona';
+$automobilis->greitis = 555;
 
-saugotiIfaila($filePath, $naujiDuomenys);
-
+echo $automobilis->gautiSpalva();
+echo '<br>';
+$automobilis->vaziuoti();
