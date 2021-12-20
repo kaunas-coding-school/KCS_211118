@@ -46,10 +46,14 @@ require_once 'libs/fs.php';
 include 'admin/Car.php';
 
 $automobilis = new Car();
+$automobilis2 = new Car();
 
 $automobilis->spalva = 'Raudona';
-$automobilis->greitis = 555;
+$automobilis->greitis = '50kmph';
 
 echo $automobilis->gautiSpalva();
 echo '<br>';
-$automobilis->vaziuoti();
+$automobilis->vaziuoti(2);
+echo "<br>";
+$automobilis->vaziuoti(2);
+echo "<br>Rida: ".$automobilis->gautiRida();
