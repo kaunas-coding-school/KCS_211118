@@ -1,5 +1,7 @@
 <?php
 
+namespace Uzdaviniai;
+
 class Grupe
 {
     private string $name;

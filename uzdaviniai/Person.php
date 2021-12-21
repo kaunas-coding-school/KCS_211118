@@ -1,5 +1,7 @@
 <?php
 
+namespace Uzdaviniai;
+
 class Person
 {
     public string $vardas;

@@ -1,9 +1,9 @@
 <?php
 
-use JetBrains\PhpStorm\Pure;
+namespace Uzdaviniai;
 
-include 'Person.php';
-include 'Grupe.php';
+use Uzdaviniai\Person;
+use Uzdaviniai\Grupe;
 
 class Student extends Person
 {

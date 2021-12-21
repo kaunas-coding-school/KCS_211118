@@ -1,0 +1,21 @@
+{
+    "name": "tautiz/cschool",
+    "description": "Klases darbai",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Libs\\": "libs/",
+            "Uzdaviniai\\": "uzdaviniai/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tautvydas Dulskis",
+            "email": "tautvydas.dulskis@hostinger.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^2.3"
+    }
+}
